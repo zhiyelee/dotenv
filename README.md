@@ -9,7 +9,9 @@ curl https://raw.githubusercontent.com/zhiyelee/dotenv/master/dotenv.sh > ~/bin/
 
 # or /usr/local/bin to share with multiple users
 curl https://raw.githubusercontent.com/zhiyelee/dotenv/master/dotenv.sh > /usr/local/bin/dotenv
-chmod +x /usr/local/bin/dotenv
+
+# grant all users execution permissions
+chmod a+x /usr/local/bin/dotenv
 ```
 
 ## Usage
