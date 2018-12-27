@@ -1,5 +1,5 @@
 # dotenv
-convert .env and set environment variable in shell
+parse .env file and set environment variable in shell
 
 ## Install
 
@@ -19,6 +19,24 @@ chmod a+x /usr/local/bin/dotenv
 ```sh
 dotenv run_my_command --any-option option1 param1 param2
 ```
+
+## How It Works
+
+Suppose we have an `.env` file like
+```bash
+# `#` started comment will be ignored
+USERNAME=zhiye
+# space and quote will be reserved
+ORGANIZATION="TUBI TV"
+TEAM=WEB
+```
+
+> `dotenv python app.py`
+
+equals to
+
+> `USENAME=zhiye ORGANIZATION="TUBI TV" TEAM=WEB python app.py`
+
 
 ## LICENSE
 ISC
